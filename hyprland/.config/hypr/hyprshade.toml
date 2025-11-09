@@ -1,0 +1,6 @@
+[[shades]]
+#always = { start = "00:00", end = "23:59", shader = "~/.config/hyprshade/shaders/warm.glsl" }
+name = "warm"
+default = true
+start_time = "00:00"
+end_time = "23:59"

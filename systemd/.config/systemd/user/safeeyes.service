@@ -1,0 +1,11 @@
+[Unit]
+Description=Safe Eyes Break Reminder
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=safeeyes
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

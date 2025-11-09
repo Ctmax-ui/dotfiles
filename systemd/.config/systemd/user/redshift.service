@@ -1,0 +1,12 @@
+[Unit]
+Description=Redshift screen color temperature adjuster
+After=graphical.target
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/redshift -m wayland -c /home/user/.config/redshift/redshift.conf
+Restart=always
+
+[Install]
+WantedBy=default.target
+
