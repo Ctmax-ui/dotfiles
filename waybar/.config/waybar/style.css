@@ -16,12 +16,15 @@ tooltip {
 }
 
 #waybar {
-    background: alpha(@background, 0.6);
+    /* background: alpha(@background, 0.6); */
+    background-color: transparent;
     border-radius: 0;
 }
 
 #workspaces {
-    margin: 1px 0;
+    /* margin: 1px 0; */
+    min-height: 28px;
+    margin: 0;
 }
 
 #workspaces button {
@@ -33,13 +36,13 @@ tooltip {
     color: @pink;
     transition: none;
     border-bottom: 1px solid @pink;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 
 #workspaces button.active {
     color: @pink;
     border: 2px solid @pink;
-    padding: 0 8px;
+    padding: 0 5px;
     margin: 0 2px;
 }
 
@@ -60,6 +63,7 @@ tooltip {
     padding: 0 10px;
 }
 
+
 #custom-power:hover,
 #bluetooth:hover,
 #network:hover,
@@ -68,9 +72,17 @@ tooltip {
 #clock:hover,
 #custom-temperature:hover,
 #memory:hover,
-#cpu:hover {
+#cpu:hover,
+#temperature:hover,
+#custom-weather:hover,
+#waybar:hover {
     background-color: alpha(@select, 0.6);
 }
+
+#temperature, #custom-weather, #waybar {
+    padding: 0px 10px 0 10px;
+}
+
 
 #bluetooth {
     color: @yellow;
@@ -89,11 +101,11 @@ tooltip {
 }
 
 #clock {
-    margin-right: 10px;
+    margin-right: 5px;
     color: @blue;
 }
 
 #custom-power {
-    margin-left: 10px;
+    margin: 0 5px;
     padding: 0px 10px 0 15px;
 }
